@@ -114,7 +114,7 @@ describe("navigate test", () => {
     }).then(() => {
       return keys.press(targetTab.id, ']');
     }).then(() => {
-      return new Promise(resolve => { setTimeout(() => resolve(), 10) });
+      return new Promise((resolve) => setTimeout(resolve, 100));
     }).then(() => {
       return tabs.get(targetTab.id);
     }).then((tab) => {
